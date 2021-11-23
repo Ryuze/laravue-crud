@@ -17,17 +17,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="mx-auto">
+            <Link :href="route('scores.index')">
+                <button class="px-4 py-2 bg-green-400 shadow text-white">
+                    Score
+                </button>
+            </Link>
+        </div>
     </BreezeAuthenticatedLayout>
 </template>
 
 <script>
-import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue'
-import { Head } from '@inertiajs/inertia-vue3';
+import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
+import { Head, Link } from "@inertiajs/inertia-vue3";
 
 export default {
     components: {
         BreezeAuthenticatedLayout,
         Head,
+        Link
     },
-}
+};
 </script>
